@@ -1,0 +1,51 @@
+.offer
+	background: url('../img/background-img.jpg')  no-repeat
+	background-position: center right
+	background-size: contain
+	padding-top: 70px
+	padding-bottom: 92px
+	position: relative
+	&:before
+		content: ''
+		width: 50%
+		height: 100%
+		position: absolute
+		background-color: #ffffff
+		top: 0
+		left: 0
+	&-block 
+		width: 50%
+		padding-right: 91px
+		position: relative
+	&__title
+		margin: 0
+		max-width: 360px
+		line-height: 35px
+		margin-bottom: 20px
+	&__subtitle
+		max-width: 240px
+		display: block
+		margin-bottom: 30px
+	&__input
+		width: 240px
+		margin-bottom: 30px
+		padding: 24px 26px
+		&:first-child
+			margin-right: 10px
+	&__button
+		width: 100%
+		min-height: 70px
+		margin-bottom: 25px
+		+bold
+	&-info
+		display: flex
+		font-size: 15px
+		line-height: 24px
+		&__manager
+			max-width: 240px
+			margin-right: 73px
+		&__self
+			max-width: 210px
+		&__phone
+			+bold
+	
