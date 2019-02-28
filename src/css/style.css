@@ -429,4 +429,90 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-block {
+    padding-right: 20px;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
+  .info-manager {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+  }
+  .offer__title {
+    font-size: 20px;
+    max-width: 300px;
+  }
+  .info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+  .offer-block {
+    padding-right: 0;
+  }
+  .offer__title {
+    padding: 0;
+    margin-left: -2px;
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: 265px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    margin-left: -2px;
+    margin-bottom: 28px;
+  }
+  .offer__input {
+    padding: 22px 24px;
+    margin-left: -2px;
+  }
+  .offer__input:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 18px;
+  }
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-manager {
+    margin-right: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .info-self {
+    margin-left: 4px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
