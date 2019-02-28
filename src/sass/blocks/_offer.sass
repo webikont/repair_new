@@ -37,15 +37,17 @@
 		min-height: 70px
 		margin-bottom: 25px
 		+bold
-	&-info
+.info
 		display: flex
+		
 		font-size: 15px
 		line-height: 24px
-		&__manager
-			max-width: 240px
-			margin-right: 73px
-		&__self
-			max-width: 210px
-		&__phone
-			+bold
-	
+		&-manager
+			width: 230px
+			margin-right: 65px
+		&-self 
+			display: flex
+			flex-direction: column	
+			&__phone
+				+bold
+		

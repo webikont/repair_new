@@ -402,7 +402,7 @@ img {
   font-weight: 700;
 }
 
-.offer-info {
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,16 +410,22 @@ img {
   line-height: 24px;
 }
 
-.offer-info__manager {
-  max-width: 240px;
-  margin-right: 73px;
+.info-manager {
+  width: 230px;
+  margin-right: 65px;
 }
 
-.offer-info__self {
-  max-width: 210px;
+.info-self {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.offer-info__phone {
+.info-self__phone {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
