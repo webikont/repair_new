@@ -552,4 +552,13 @@ img {
   top: 0;
   right: 0;
 }
+
+.top {
+  width: 60px;
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  display: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
