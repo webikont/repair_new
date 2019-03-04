@@ -13,29 +13,30 @@ $(document).ready(function(){
 });
 
 // кнопка прокрутки наверх
+/*
+ $(function () {
 
-$(function () {
+ 	$(window).scroll(function () {
 
-	$(window).scroll(function () {
+ 		if ($(this).scrollTop() != 0) {
 
-		if ($(this).scrollTop() != 0) {
+ 			$('#top').fadeIn();
 
-			$('#top').fadeIn();
+ 		} else {
 
-		} else {
+ 			$('#top').fadeOut();
 
-			$('#top').fadeOut();
+ 		}
 
-		}
+ 	});
 
-	});
+ 	$('#top').click(function () {
 
-	$('#top').click(function () {
+ 		$('body,html').animate({
+ 			scrollTop: 0
+ 		}, 800);
 
-		$('body,html').animate({
-			scrollTop: 0
-		}, 800);
+ 	});
 
-	});
-
-});
+ }); 
+*/
