@@ -596,6 +596,21 @@ img {
   margin: auto;
 }
 
+@media (max-width: 576px) {
+  .portfolio {
+    padding-top: 43px;
+    padding-bottom: 64px;
+    background: #f5f5f5;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    margin-bottom: 41px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+}
+
 .price {
   padding-top: 100px;
 }
