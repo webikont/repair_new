@@ -560,6 +560,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  outline: none;
 }
 
 .modal-dialog__close:hover {
