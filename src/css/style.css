@@ -65,6 +65,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+  outline: none;
 }
 
 .button:hover {
@@ -437,6 +438,8 @@ img {
 }
 
 .info-self__phone {
+  color: #333333;
+  text-decoration: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -559,6 +562,11 @@ img {
   right: 0;
 }
 
+.modal-dialog__close:hover {
+  cursor: pointer;
+  background-color: #ffdb33;
+}
+
 .top {
   width: 60px;
   position: fixed;
@@ -594,6 +602,20 @@ img {
 
 .slider__image {
   margin: auto;
+}
+
+.arrows__right:hover {
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.arrows__left:hover {
+  -webkit-animation-name: slideLeft;
+          animation-name: slideLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @media (max-width: 576px) {
@@ -857,6 +879,193 @@ img {
   .step__text {
     line-height: 16px;
     font-size: 12px;
+  }
+}
+
+.brif {
+  padding-bottom: 100px;
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview {
+  padding-right: 71px;
+}
+
+.interview__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.interview-list__text {
+  max-width: 400px;
+}
+
+.interview-list__counter {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .brif__form {
+    padding-left: 30px;
+  }
+  .form__description {
+    display: block;
+  }
+  .form__title {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brif {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, right bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 0;
+  }
+  .interview__subtitle {
+    margin-bottom: 40px;
+  }
+  .interview-list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    margin-right: 10px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    margin-right: 10px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
