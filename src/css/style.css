@@ -884,7 +884,8 @@ img {
 }
 
 .brif {
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 73px;
   background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
   background-position: left center, right center;
   background-size: 50%, contain;
@@ -930,7 +931,8 @@ img {
 }
 
 .interview__title {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  margin-top: 0;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -960,6 +962,10 @@ img {
   margin-bottom: 25px;
 }
 
+.interview-list__item:last-child {
+  margin-bottom: 0px;
+}
+
 .interview-list__text {
   max-width: 400px;
 }
@@ -978,18 +984,24 @@ img {
 
 .form__title {
   margin-bottom: 50px;
+  margin-top: 0px;
   font-size: 22px;
+  font-size-line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
 .form__subtitle {
   display: block;
-  margin-bottom: 94px;
+  margin-bottom: 49px;
   font-size: 16px;
 }
 
 @media (max-width: 1200px) {
+  .brif {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .interview {
     padding-right: 30px;
   }
@@ -1024,13 +1036,70 @@ img {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 0;
+    margin-top: 90px;
   }
   .interview__subtitle {
     margin-bottom: 40px;
   }
   .interview-list:last-child {
     margin-bottom: 0;
+  }
+  .form__title {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 578px) {
+  .brif {
+    padding-top: 46px;
+    padding-bottom: 34px;
+  }
+  .brif__button {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .brif__form {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .brif__interview {
+    padding-right: 0;
+  }
+  .interview__title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    max-width: 250px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    max-width: 190px;
+    margin-bottom: 39px;
+  }
+  .interview-list__counter {
+    margin-right: 8px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 230px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 25.35px;
+    margin-bottom: 27px;
+    margin-top: 145px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 26.88px;
+    margin-bottom: 34px;
+  }
+  .form__description {
+    font-size: 14px;
+    max-width: 140px;
+    line-height: 24px;
+    text-align: center;
+    display: inline-block;
   }
 }
 

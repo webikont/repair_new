@@ -1,5 +1,6 @@
 .brif
-	padding-bottom: 100px
+	padding-top: 100px
+	padding-bottom: 73px
 	background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
 	background-position: left center, right center
 	background-size: 50%, contain
@@ -26,7 +27,8 @@
 .interview
 	padding-right: 71px
 	&__title
-		margin-bottom: 50px
+		margin-bottom: 55px
+		margin-top: 0
 		font-size: 22px
 		+bold
 		line-height: 33px
@@ -42,6 +44,8 @@
 			align-items: center
 			+bold
 			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0px
 		&__text
 			max-width: 400px
 		&__counter
@@ -57,13 +61,18 @@
 .form
 	&__title
 		margin-bottom: 50px
+		margin-top: 0px
 		font-size: 22px
+			line-height: 33px
 		+bold
 	&__subtitle	
 		display: block
-		margin-bottom: 94px
+		margin-bottom: 49px
 		font-size: 16px
 @media (max-width: 1200px)
+	.brif
+		padding-top: 50px
+		padding-bottom: 50px
 	.interview
 		padding-right: 30px
 		&-list 
@@ -89,11 +98,58 @@
 		&-block
 			flex-direction: column
 		&__form 
-			margin-top: 0
+			margin-top: 90px
 	.interview
 		&__subtitle
 			margin-bottom: 40px
 		&-list
 			&:last-child
 				margin-bottom: 0
-		
+	.form
+		&__title
+			margin-top: 60px
+@media (max-width: 578px)
+	.brif
+		padding-top: 46px
+		padding-bottom: 34px
+		&__button
+			margin-top: 2px
+			font-size: 14px
+		&__form
+			padding-left: 0
+			margin-top: 0
+		&__interview
+			padding-right: 0
+	.interview
+		&__title
+			font-size: 18px
+			line-height: 1.4
+			margin-bottom: 16px
+			max-width: 250px
+		&__subtitle
+			font-size: 14px
+			max-width: 190px
+			margin-bottom: 39px
+		&-list
+			&__counter
+				margin-right: 8px
+			&__text
+				font-size: 14px
+				max-width: 230px
+	.form
+		&__title
+			font-size: 18px
+			line-height: 25.35px
+			margin-bottom: 27px
+			margin-top: 145px
+			max-width: 
+		&__subtitle
+			font-size: 14px
+			line-height: 26.88px
+			margin-bottom: 34px
+		&__description
+			font-size: 14px
+			max-width: 140px
+			line-height: 24px
+			text-align: center
+			display: inline-block
